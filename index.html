@@ -92,23 +92,30 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <form action="">
-                <label for="name">votre nom</label>
-                <input type="text" id="name" name="name" required>
+            <div class="form_container">
+                <form action="">
+                    <div class="form_group">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
 
-                <label for="mail">votre adresse mail</label>
-                <input type="email" name="mail" id="mail" required>
+                    <div class="form_group">
+                        <label for="mail">Votre adresse mail</label>
+                        <input type="email" id="mail" name="mail" placeholder="exemple@mail.com" required>
+                    </div>
 
-                <label for="message">votre message</label>
-                <input type="text"id="message" name="message" required>
+                    <div class="form_group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="Écrivez votre message..." required></textarea>
+                    </div>
 
-                <button type="submit">envoyez votre message</button>
-            </form>
+                    <button type="submit">Envoyer votre message</button>
+                </form>
+            </div>
         </section>
     
     
     
     </main>
-    <footer></footer>
 </body>
 </html>
